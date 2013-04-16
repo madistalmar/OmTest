@@ -9,8 +9,9 @@
 	<body>
 		<div class='container'>
 			<%= render 'layouts/header' %>
-			<% flash.each do |name, msg| %>
-				<%= content_tag(:div, msg, class: "asert alert-#{name}") %>
+			<!-- See plokk tekitab kiireid teateid a la login successful jms -->
+				<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 			<% end %>
 			<%= yield %>
 		</div>
