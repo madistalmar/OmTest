@@ -1,9 +1,1 @@
-<% if user_signed_in? %>
-	<h1>You are logged in!</h1>
-<% else %>
-	<div class="hero-unit">
-		<h1>Welcome to One Month Rails</h1>
-		<p>Find me in app/views/pages/about.html.erb</p>
-		<%= link_to "Sign up here", new_user_registration_path, class: "btn btn-primary btn-custom" %>
-	</div>
-<% end %>
+<%= render home%>

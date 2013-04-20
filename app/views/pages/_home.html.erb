@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+	<p>Welcome to the Pins application</p>
+<%else%>
+	<div class="hero-unit">
+		<h1>Welcome to One Month Rails</h1>
+		<p>Sign up to be able to add pins to this application</p>
+		<%= link_to "Sign up here", new_user_registration_path, class: "btn btn-primary btn-custom" %>
+	</div>
+<%end%>
